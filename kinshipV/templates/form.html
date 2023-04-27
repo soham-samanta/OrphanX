@@ -1,347 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrphanX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Abel');
 
+body, html {
+  color: #fff;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
 
-<style>
-	fieldset {
-		display: block;
-		width: 50%;
-		text-align:center;
-		margin-left: 25%;
-		margin-right: 25%;
-			}
-	button:hover {
-		background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+body {
+  font-size: 1.2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://n5a7d2f2.stackpathcdn.com/wp-content/uploads/2018/10/childrens-expectations-760x399.png) center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
 
-		 background-color:#c8c8c8;
-			}
-	
-			fieldset {
-display: block;
-width: 50%;
-text-align:center;
-margin-left: 25%;
-margin-right: 25%;
-	}
+.text-box {
+  background-color: rgba(18, 70, 119, 0.8);
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 20px;
+  width: 90%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.container {
+  background-color: rgba(22, 160, 133,0.7);
+  border-radius: 20px;
+  margin: auto;
+  width: 90%;
+  padding: 1em;
+  
+}
+
+#survey-form {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.input-tab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.input-field {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  margin: 18px 0 0 10px;
+  border: 1px solid #e67e22;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+  font-weight: 300;
+}
+
+input {
+  margin: 7px;
+}
+
+#dropdown {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;  
+  border: 1px solid #e67e22;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  background-color: #e67e22;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 1px solid;
+}
+
 button:hover {
- background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
- background-color:#1E90FF;
-	}
-
-input,select,button{
-padding: 5px 8px;
-margin: 4px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 3px;
-box-sizing: border-box;
-}
-select{
-padding:11px;
-width:100%;
-border-radius:4px;
-text:bold;
-}
-input[type=text],input[type=date],input[type=mail],input[type=tel],input[type=date]{
-padding:11px;
-width:99%;
-box-sizing:border-box;
+  background-color: #bf6516;
 }
 
-input[type=submit] {
-background-color: #1E90FF;
-color: white;
-padding: 5px 8px;
-margin: 4px 0;
-border: none;
-border-radius: 3px;
-cursor: pointer;
+footer {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px;
 }
 
-input[type=submit]:hover {
-background-color:#45a049;
-}
-input[type=text]{
-text-transform:uppercase;
-}
-input[type=text]:focus,input[type=date]:focus,input[type=tel]:focus,input[type=mail]:focus,input[type=marks]:focus,input[type=month]:focus {
-background-color:rgb(0, 3, 3);
-}
-input[type=marks],input[type=month]{
-width:100%;
+footer a {
+  color: #f39c12;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-legend{
-color:#1E90FF;
-}
-th{
-text-align:center;
+footer a:hover {
+  color: #f1c40f;
 }
 
-td{
-text-align:left;
+footer p {
+  margin: 0;
+  font-size: 17px;
 }
 
-	input,select,button{
-		padding: 5px 8px;
-		margin: 4px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 3px;
-		box-sizing: border-box;
-	}
-	select{
-		padding:11px;
-		width:100%;
-		border-radius:4px;
-		text:bold;
-		}
-	input[type=text],input[type=date],input[type=mail],input[type=tel],input[type=date]{
-		padding:11px;
-		width:99%;
-		box-sizing:border-box;
-	}
-
-	input[type=submit] {
-		background-color: #1219dc;
-		color: white;
-		padding: 5px 8px;
-		margin: 4px 0;
-		border: none;
-		border-radius: 3px;
-		cursor: pointer;
-	}
-
-	input[type=submit]:hover {
-		background-color:#000801;
-	}
-input[type=text]{
-		text-transform:uppercase;
-	}
-	input[type=text]:focus,input[type=date]:focus,input[type=tel]:focus,input[type=mail]:focus,input[type=marks]:focus,input[type=month]:focus {
-		background-color:rgb(0, 2, 3);
-	}
-	input[type=marks],input[type=month]{
-	width:100%;
-	}
-
-	legend{
-		color:#2a4ede;
-	}
-	th{
-	text-align:center;
-	}
-
-	td{
-	text-align:left;
-	}
-
-	</style>
-
-<body style="background-color:rgb(207, 207, 207);">
-	<body style="background-color:rgb(148, 242, 148), background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;">
-
-
-<form name="form" onsubmit="return text()" action=" " method="post" enctype="multipart/form-data" >
-	
-	<fieldset style="border-radius:30px;border:3px solid rgb(168, 166, 166);">
-		<legend><h1 style="text-shadow:5px 5px 5px rgb(2, 2, 41);">Personal Detail</h1></legend>
-	
-		<table align="center">
-		<tr>
-			<th>
-			Picture</th>
-			<th>:</th>
-			<td><input type="file" name="image" accept="image/*"></td>
-		</tr>
-			<tr>
-				<th>First Name</td>
-				<td>:</td>
-				<td><input type="text"  name="fname" id="f1" placeholder="FirstName" maxlength="10"  autocomplete="on" ></td>
-			</tr>
-			
-		
-			<tr>
-				<th>Last Name</th>
-				<td>:</td>
-				<td><input type="text" name="lname" id="l1" placeholder="LastName"  maxlength="10" autocomplete="on" ></td>
-			</tr>
-			<tr>
-				<th>Gender</th>
-				<td>:</td>
-				<td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</td>
-			</tr>
-			<tr>
-				<th>Date Of Birth</th>
-				<td>:</td>
-				<td><input type="date" name="dob" id="dob1" placeholder="dd/mm/yyyy"></td>
-			</tr>
-			<tr>		
-				<th>Contact</th>
-				<td>:</td>
-				<td><input type="tel" name="phoneno" maxlength="10" id="pno1" ></td>
-			</tr>
-
-			<tr>
-				<th>Email</th>
-				<td>:</td>.
-				<td><input type="mail" name="email" id="mail1" ></td>
-			</tr>
-
-			<tr>
-				<th>Address</th>
-				<td>:</td>
-				<td><textarea name="address" rows="3" cols="29" ></textarea></td>
-			</tr>
-		</table>
-	</fieldset>
-
-	<br>
-
-
-<center>
-<br>
-<input type="submit" name="submit" value="submit"><br></center>
-</form>
-
-<script>
-	function text(){
-	//profile photo
-	var  im=document.form.image.value;
-	if(im == ""){
-		alert("Please Upload Profile Photo!!!");
-		return false;
-	}
-	//fname
-	var x=document.form.fname;
-		if(x.value ==""){
-			alert("Please Enter FirstName!!!");
-			//document.getElementById("nameloc").innerHTML="<img src='unchecked.png' width='10px' height='10px'/>";
-			document.getElementById("f1").focus();
-			return false;
-		}
-		if(!allLetter(x))
-		{
-			alert("Please Enter Only Character!!!")
-			//document.getElementById("f1").innerHTML= "<img src='unchecked.png'/> Please enter Only character"; 
-			document.getElementById("f1").focus();
-			return false;
-		}
-		  
-		//lname
-		var w=document.form.lname;
-		if(w ==""){
-			alert("Please Enter LastName!!!");
-			document.getElementById("l1").focus();
-			return false;
-		}
-		if(!allLetter(w))
-		{
-			alert("Please Enter Only Character!!!");
-			document.getElementById("l1").focus();
-			return false;
-		}
-		
-		//gender
-		var g = document.form.gender.value;
-		if(g == "")
-		{
-			alert("Please Select Gender!!!");
-			return false;
-		}
-		
-		//dob
-		if(document.form.dob.value=="")
-		{
-			alert("Please Enter DOB!!!");
-			document.getElementById("dob1").focus();
-			return false;
-		}
-	
-		//phoneno
-		var z=document.form.phoneno;
-		if(z.value==""){
-			alert("Please Enter the PhoneNo!!!");
-			document.getElementById("pno1").focus();
-			return false;
-		}
-		if(z.value.length!=10){
-			alert("Enter 10 digit Phone Number!!!");
-			document.getElementById("pno1").focus();
-			return false;
-		}
-		if(!allnumeric(z)){
-			alert("Enter valid Phone Number!!!");
-			document.getElementById("pno1").focus();
-			return false;
-		}
-		//email
-		var id=document.form.email;
-		if(id.value=="")
-		{
-		alert("Enter Email-Id!!!");
-		document.getElementById("mail1").focus();
-		return false;
-		}
-		if (! ValidateEmail(id)) {
-		 alert('Please input valid Email ID!!!');
-      return false;
-		}
-		//address
-		var add=document.form.address.value;
-		if(add=="")
-		{
-			alert("Please Enter Address!!!");
-			return false;
-		}
-		
+@media only screen and (max-width: 768px) {
+  body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://wallpapercave.com/wp/Fdh76FQ.jpg) center no-repeat fixed;
+  background-size: cover;
 }
-function ValidateEmail(inputText)
-			 {
-				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-				if(inputText.value.match(mailformat))
-					{
-					
-					return true;
-					}
-				else
-					{
-					return false;
-					}
-			}
-			
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .input-tab {
+    width: 100%;
+    float: left;
+    margin-left: -10px;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+}
 
-			function allnumeric(inputtxt)
-               {
-                  var numbers = /^[0-9]+$/;
-                  if(inputtxt.value.match(numbers))
-                  {
-                    return true;
-                  }
-                  else
-                  {
-                    return false;
-                  }
-               }
-function allLetter(inputtxt)
-                {
-                     var letters = /^[A-Za-z]+$/;
-                     if(inputtxt.value.match(letters))
-                     {
-              	         return true;
-                     }
-                     else
-                    {
-              	        return false;
-                    }
-                }	
-</script>
- 
-</body>
-</html>
+    </style>
+</head>
+<header>
+    <div class="text-box">
+        <h1 id="title">Welcome To OrphanX!</h1>
+    </div>
+</header>
+<div class="container">
+    <form id="survey-form" method="GET">
+
+        <div class="labels">
+            <label id="name-label" for="name">* First Name</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name" required
+                autofocus>
+        </div>
+        <div class="labels">
+            <label id="name-label" for="name">* Last Name</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+        </div>
+
+        <div class="labels">
+            <label id="email-label" for="email">* Email</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="email" id="email" name="email" placeholder="email@email.com" required>
+        </div>
+
+        <div class="labels">
+            <label id="number-label" for="number">Upload Picture</label>
+            
+        </div>
+        <div class="input-tab">
+            <input type="file" name="image" accept="image/*">
+        </div>
+
+
+        <div class="labels">
+            <label for="dropdown">How did you get to know About Us?</label>
+        </div>
+        <div class="input-tab">
+            <select id="dropdown" name="site">
+                <option disabled value selected>Select an option</option>
+                <option value="web">Relative/Friends</option>
+                <option value="hulu">Goverment</option>
+                <option value="youtube">Social Media</option>
+                <option value="tv">Print Media</option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+
+        <!-- <div class="labels">
+            <label>How much do you like South Park?</label>
+        </div>
+        <div class="input-tab">
+            <input type="radio" name="radio-button" value="love">I love it!<br>
+            <input type="radio" name="radio-button" value="like">I like it<br>
+            <input type="radio" name="radio-button" value="ok">It's ok<br>
+            <input type="radio" name="radio-button" value="nah">Not really<br>
+        </div> -->
+
+        <div class="labels">
+            <label for="dropdown">Desired Age Category of Child?</label>
+        </div>
+        <div class="input-tab">
+            <select id="dropdown" name="seasons">
+                <option disabled value selected>Select an option</option>
+                <option value="<=5">0-5</option>
+                <option value="<=10">6-10</option>
+                <option value="<=15">10-15</option>
+                <option value="<=21">15-17</option>
+            </select>
+        </div>
+
+        <!-- <div class="labels">
+            <label>Who do you watch South Park with?<br>(Check all that apply):</label>
+        </div>
+        <div class="input-tab">
+            <input type="checkbox" name="alone" value="alone">Alone<br>
+            <input type="checkbox" name="friends" value="fr">Friends<br>
+            <input type="checkbox" name="family" value="fam">Family<br>
+            <input type="checkbox" name="partner" value="fam">Partner<br>
+            <input type="checkbox" name="other" value="other">Other<br>
+        </div> -->
+
+        <div class="labels">
+            <label for="comments">Tell us more about your preference</label>
+        </div>
+        <div class="input-tab">
+            <textarea class="input-field" id="comments" name="comments" rows="10" cols="40"
+                placeholder="Your comments..."></textarea>
+        </div>
+
+        <div class="btn">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+<footer>
+    <div class="contact">
+        <a href="https://github.com/linh4" target="_blank">
+            <span class="icon"><i class="fa fa-github"></i></span></a>
+        <a href="https://codepen.io/linh4/" target="_blank">
+            <span class="icon"><i class="fa fa-codepen"></i></span></a>
+        <a href="https://www.freecodecamp.org/linh4" target="_blank">
+            <span class="icon"><i class="fa fa-free-code-camp"></i></span></a>
+    </div>
+</footer>
