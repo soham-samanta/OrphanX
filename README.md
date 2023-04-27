@@ -1,5 +1,5 @@
 # OrphanX
-<img src="https://lh6.googleusercontent.com/rU8dZ0x67y63AeujFhM79UG_I3ZagEqTmDffagrUVuBI5eXPHtW2Z7zP1KU1MLKtl0wU5eNS_QHU-9v3GUJgxlKYeAR1yKADY8xCj7xMrpL8z9Rr2Zde9_OGsmXTigvBr7DEWggV" alt="OrphanX Banner" height="75px">
+<img src="https://lh6.googleusercontent.com/rU8dZ0x67y63AeujFhM79UG_I3ZagEqTmDffagrUVuBI5eXPHtW2Z7zP1KU1MLKtl0wU5eNS_QHU-9v3GUJgxlKYeAR1yKADY8xCj7xMrpL8z9Rr2Zde9_OGsmXTigvBr7DEWggV" alt="OrphanX Banner" height="275px">
 <ul>
     <li>An easy adoption system , bringing orphanages across India under one platform</li>
     <li>Face Recognition based smart adoption system , matching parents with children.</li>
@@ -8,7 +8,7 @@
 ### About IBS Project 
 
 
-<img src="https://i.morioh.com/f8c70ac378.png" alt="IBS Logo" height="100px" width="100px">
+<img src="https://i.morioh.com/f8c70ac378.png" alt="IBS Logo" height="300px" width="300px">
 - OrphanX is a Face Recognition Project which uses OpenCV and Deep Neural Networks in it's core .<br>
 - Built with Django and support responsiveness, hence suitable for (Mobile, PC, Tablets) <br>
 - It includes ML models Siamese Network. <br>
