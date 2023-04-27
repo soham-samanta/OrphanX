@@ -16,15 +16,13 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
-STATIC_DIR = os.path.join(BASE_DIR,'static')
-MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-73ar0ih7&+(a3(mdj8lo%5e=%3xrb$q!g1!ij1jf%_fsjbssz#'
+SECRET_KEY = 'django-insecure-cmp967fi=ugabxlsi0^gz9%axb)#^pujzxxkfvmb+*^065^8eh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
 ]
 
 MIDDLEWARE = [
@@ -121,14 +118,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    STATIC_DIR,  
-]
-
-
-# media
-MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

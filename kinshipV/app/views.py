@@ -1,13 +1,6 @@
-# Create your views here.
-import os
 from django.shortcuts import render
-from django.http import HttpResponse, FileResponse
-from django.conf import settings
-from extract.graphs import exctocsvtopandas, confmat
-from toword.docxgen import doccreate
+from django.http import HttpResponse
+# Create your views here.
 
-# def index(req):
-#     return HttpResponse("Hello Peeps !! Corridoor") 
-
-def index1(req):
+def index(req):
     return render(req,'index.html')
