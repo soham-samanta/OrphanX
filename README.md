@@ -9,14 +9,14 @@
 
 
 <img src="https://i.morioh.com/f8c70ac378.png" alt="IBS Logo" height="100px" width="100px">
-- OrphanX is a Face Recognition Project which uses OpenCV and Deep Neural Networks in it's core. <br>
+- OrphanX is a Face Recognition Project which uses OpenCV and Deep Neural Networks in it's core .<br>
 - Built with Django and support responsiveness, hence suitable for (Mobile, PC, Tablets) <br>
 - It includes ML models Siamese Network. <br>
 - Combination of all ML models done with Voting Classifier <br>
 - Combined all different detection and recognition models into a pipeline. 
 <br>
 
-## Deployed Project Link: https://soham-engage-ibs.herokuapp.com/
+<!-- ## Deployed Project Link: https://soham-engage-ibs.herokuapp.com/ -->
 
 ## Tech Stack Used : <br>
 FrontEnd : ![HTML5](https://img.shields.io/badge/-HTML5-000?&logo=html5&logoColor=E34F26)
@@ -50,7 +50,7 @@ Database : ![SQLite3](https://img.shields.io/badge/-SQLite3-000?&logo=sqlite&log
 
 <br>
 
-This Project is a part of KiiT University Minor Project (6-Sem). Submitted by 
+This Project is a part of KiiT University Minor Project (6-Sem). Submitted by <br> 
 [Soham Samanta](https://www.linkedin.com/in/soham-samanta2000/) <br> 
 [Prerak Gupta](https://www.linkedin.com/in/prerakgpa/) <br> 
 [Nyaasha Patwari](https://www.linkedin.com/in/nyaashapatwari18/) <br> 
