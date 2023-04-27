@@ -4,3 +4,9 @@ from django.http import HttpResponse
 
 def index(req):
     return render(req,'index.html')
+
+def landpage(req):
+    return render(req,'landing.html')
+
+def formpage(req):
+    return render(req,'form.html')
