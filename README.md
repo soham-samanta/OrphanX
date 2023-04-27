@@ -1,5 +1,5 @@
 # OrphanX
-<img src="https://lh6.googleusercontent.com/rU8dZ0x67y63AeujFhM79UG_I3ZagEqTmDffagrUVuBI5eXPHtW2Z7zP1KU1MLKtl0wU5eNS_QHU-9v3GUJgxlKYeAR1yKADY8xCj7xMrpL8z9Rr2Zde9_OGsmXTigvBr7DEWggV" alt="OrphanX Banner" height="175px">
+<img src="https://img.buzzfeed.com/buzzfeed-static/static/2023-02/1/3/asset/4512ce16c1ea/sub-buzz-1626-1675221020-32.jpg?resize=990:660" alt="OrphanX Banner" height="175px">
 <ul>
     <li>An easy adoption system , bringing orphanages across India under one platform</li>
     <li>Face Recognition based smart adoption system , matching parents with children.</li>
