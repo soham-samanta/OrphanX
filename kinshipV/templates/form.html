@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+
+<style>
+	fieldset {
+		display: block;
+		width: 50%;
+		text-align:center;
+		margin-left: 25%;
+		margin-right: 25%;
+			}
+	button:hover {
+		background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+
+		 background-color:#c8c8c8;
+			}
+	
+			fieldset {
+display: block;
+width: 50%;
+text-align:center;
+margin-left: 25%;
+margin-right: 25%;
+	}
+button:hover {
+ background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+ background-color:#1E90FF;
+	}
+</style>
+
+<style>
+input,select,button{
+padding: 5px 8px;
+margin: 4px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 3px;
+box-sizing: border-box;
+}
+select{
+padding:11px;
+width:100%;
+border-radius:4px;
+text:bold;
+}
+input[type=text],input[type=date],input[type=mail],input[type=tel],input[type=date]{
+padding:11px;
+width:99%;
+box-sizing:border-box;
+}
+
+input[type=submit] {
+background-color: #1E90FF;
+color: white;
+padding: 5px 8px;
+margin: 4px 0;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color:#45a049;
+}
+input[type=text]{
+text-transform:uppercase;
+}
+input[type=text]:focus,input[type=date]:focus,input[type=tel]:focus,input[type=mail]:focus,input[type=marks]:focus,input[type=month]:focus {
+background-color:rgb(0, 3, 3);
+}
+input[type=marks],input[type=month]{
+width:100%;
+}
+</style>
+
+<style>
+legend{
+color:#1E90FF;
+}
+th{
+text-align:center;
+}
+
+td{
+text-align:left;
+}
+</style>
+
+<style>
+	input,select,button{
+		padding: 5px 8px;
+		margin: 4px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		box-sizing: border-box;
+	}
+	select{
+		padding:11px;
+		width:100%;
+		border-radius:4px;
+		text:bold;
+		}
+	input[type=text],input[type=date],input[type=mail],input[type=tel],input[type=date]{
+		padding:11px;
+		width:99%;
+		box-sizing:border-box;
+	}
+
+	input[type=submit] {
+		background-color: #1219dc;
+		color: white;
+		padding: 5px 8px;
+		margin: 4px 0;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+		background-color:#000801;
+	}
+input[type=text]{
+		text-transform:uppercase;
+	}
+	input[type=text]:focus,input[type=date]:focus,input[type=tel]:focus,input[type=mail]:focus,input[type=marks]:focus,input[type=month]:focus {
+		background-color:rgb(0, 2, 3);
+	}
+	input[type=marks],input[type=month]{
+	width:100%;
+	}
+</style>
+
+<style>
+	legend{
+		color:#2a4ede;
+	}
+	th{
+	text-align:center;
+	}
+
+	td{
+	text-align:left;
+	}
+	</style>
+
+	</style>
+
+<body style="background-color:rgb(207, 207, 207);">
+	<body style="background-color:rgb(148, 242, 148), background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;">
+
+
+<form name="form" onsubmit="return text()" action=" " method="post" enctype="multipart/form-data" >
+	
+	<fieldset style="border-radius:30px;border:3px solid rgb(168, 166, 166);">
+		<legend><h1 style="text-shadow:5px 5px 5px rgb(2, 2, 41);">Personal Detail</h1></legend>
+	
+		<table align="center">
+		<tr>
+			<th>
+			Picture</th>
+			<th>:</th>
+			<td><input type="file" name="image" accept="image/*"></td>
+		</tr>
+			<tr>
+				<th>First Name</td>
+				<td>:</td>
+				<td><input type="text"  name="fname" id="f1" placeholder="FirstName" maxlength="10"  autocomplete="on" ></td>
+			</tr>
+			
+		
+			<tr>
+				<th>Last Name</th>
+				<td>:</td>
+				<td><input type="text" name="lname" id="l1" placeholder="LastName"  maxlength="10" autocomplete="on" ></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td>:</td>
+				<td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</td>
+			</tr>
+			<tr>
+				<th>Date Of Birth</th>
+				<td>:</td>
+				<td><input type="date" name="dob" id="dob1" placeholder="dd/mm/yyyy"></td>
+			</tr>
+			<tr>		
+				<th>Contact</th>
+				<td>:</td>
+				<td><input type="tel" name="phoneno" maxlength="10" id="pno1" ></td>
+			</tr>
+
+			<tr>
+				<th>Email</th>
+				<td>:</td>.
+				<td><input type="mail" name="email" id="mail1" ></td>
+			</tr>
+
+			<tr>
+				<th>Address</th>
+				<td>:</td>
+				<td><textarea name="address" rows="3" cols="29" ></textarea></td>
+			</tr>
+		</table>
+	</fieldset>
+
+	<br>
+
+
+<center>
+<br>
+<input type="submit" name="submit" value="submit"><br></center>
+</form>
+
+<script>
+	function text(){
+	//profile photo
+	var  im=document.form.image.value;
+	if(im == ""){
+		alert("Please Upload Profile Photo!!!");
+		return false;
+	}
+	//fname
+	var x=document.form.fname;
+		if(x.value ==""){
+			alert("Please Enter FirstName!!!");
+			//document.getElementById("nameloc").innerHTML="<img src='unchecked.png' width='10px' height='10px'/>";
+			document.getElementById("f1").focus();
+			return false;
+		}
+		if(!allLetter(x))
+		{
+			alert("Please Enter Only Character!!!")
+			//document.getElementById("f1").innerHTML= "<img src='unchecked.png'/> Please enter Only character"; 
+			document.getElementById("f1").focus();
+			return false;
+		}
+		  
+		//lname
+		var w=document.form.lname;
+		if(w ==""){
+			alert("Please Enter LastName!!!");
+			document.getElementById("l1").focus();
+			return false;
+		}
+		if(!allLetter(w))
+		{
+			alert("Please Enter Only Character!!!");
+			document.getElementById("l1").focus();
+			return false;
+		}
+		
+		//gender
+		var g = document.form.gender.value;
+		if(g == "")
+		{
+			alert("Please Select Gender!!!");
+			return false;
+		}
+		
+		//dob
+		if(document.form.dob.value=="")
+		{
+			alert("Please Enter DOB!!!");
+			document.getElementById("dob1").focus();
+			return false;
+		}
+	
+		//phoneno
+		var z=document.form.phoneno;
+		if(z.value==""){
+			alert("Please Enter the PhoneNo!!!");
+			document.getElementById("pno1").focus();
+			return false;
+		}
+		if(z.value.length!=10){
+			alert("Enter 10 digit Phone Number!!!");
+			document.getElementById("pno1").focus();
+			return false;
+		}
+		if(!allnumeric(z)){
+			alert("Enter valid Phone Number!!!");
+			document.getElementById("pno1").focus();
+			return false;
+		}
+		//email
+		var id=document.form.email;
+		if(id.value=="")
+		{
+		alert("Enter Email-Id!!!");
+		document.getElementById("mail1").focus();
+		return false;
+		}
+		if (! ValidateEmail(id)) {
+		 alert('Please input valid Email ID!!!');
+      return false;
+		}
+		//address
+		var add=document.form.address.value;
+		if(add=="")
+		{
+			alert("Please Enter Address!!!");
+			return false;
+		}
+		
+}
+function ValidateEmail(inputText)
+			 {
+				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				if(inputText.value.match(mailformat))
+					{
+					
+					return true;
+					}
+				else
+					{
+					return false;
+					}
+			}
+			
+
+			function allnumeric(inputtxt)
+               {
+                  var numbers = /^[0-9]+$/;
+                  if(inputtxt.value.match(numbers))
+                  {
+                    return true;
+                  }
+                  else
+                  {
+                    return false;
+                  }
+               }
+function allLetter(inputtxt)
+                {
+                     var letters = /^[A-Za-z]+$/;
+                     if(inputtxt.value.match(letters))
+                     {
+              	         return true;
+                     }
+                     else
+                    {
+              	        return false;
+                    }
+                }	
+</script>
+ 
+</body>
+</html>
